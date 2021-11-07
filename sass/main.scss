@@ -1,4 +1,4 @@
-@import './untils/normalize';
+/*@import './untils/normalize';
 @import './untils/variables';
 @import './untils/hidden';
 @import './untils/global-settings';
@@ -32,6 +32,54 @@
 
 // PORTFOLIO
 @import './components/menu';
+@import './components/portfolio';
+
+
+// FORM
+@import './components/modal';
+@import './components/form';
+@import './components/form-checkbox';*/
+
+
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/global-settings';
+@import './utils/container';
+@import './utils/mixin';
+@import './components/section';
+
+// HEADER
+@import './components/header-container';
+@import './components/contacts';
+@import './components/logo';
+@import './components/nav';
+// mobile-menu
+
+@import './components/mobile-menu';
+
+
+// hero section
+@import './components/button';
+@import './components/hero';
+
+// features section
+@import './components/features';
+
+// Task section
+@import './components/task';
+
+// Team section
+@import './components/team';
+
+
+// Clietns section
+@import './components/clients';
+
+// footer section
+@import './components/footer';
+
+// PORTFOLIO
 @import './components/portfolio';
 
 
