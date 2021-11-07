@@ -1,66 +1,70 @@
 .checkbox__label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    margin-bottom: 30px;
-  
-    font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+
+  @media (min-width: $desctop) {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-  
-    color: $primary-text-color;
   }
-  
-  .checkbox__link {
+}
+
+.checkbox__link {
+  // display: inline;
+  margin-left: 3px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: $accent-color;
+
+  @media (min-width: $desctop) {
     margin-left: 5px;
     font-size: 14px;
     line-height: 1.71;
-  
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-  
-    color: $accent-color;
   }
-  
-  .checkbox {
-    position: absolute;
-  
-    &:focus,
-    &:hover {
-      fill: $accent-color;
-    }
-  }
-  .checkbox__item {
-    
-    &:focus,
-    &:hover {
-      fill: $accent-color;
-      background-color: $accent-color;
-      background-image: url('../images/icons.svg/icomoon-10/SVG/icon-check.svg');
-      
-      
-    }
-  }
+}
 
+// .checkbox__text {
+//   display: inline;
+// }
 
-  .checkbox:checked {
-    
-    border-radius: 2px;
-  
+.checkbox {
+  position: absolute;
+
+  &:focus + .checkbox__item,
+  &:hover + .checkbox__item {
     fill: $accent-color;
-  
-    background-color: $accent-color;
-    background-image: url('../images/icons.svg/icomoon-10/SVG/icon-check.svg');
-    background-size: contain;
-    
   }
+}
 
-  .checkbox__item {
-    margin-right: 7px;
-    width: 16px;
-    height: 15px;
-  
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.checkbox:checked + .checkbox__item {
+  border-radius: 2px;
+
+  fill: $accent-color;
+
+  background-color: $accent-color;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+}
+
+.checkbox__item {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+      
+   

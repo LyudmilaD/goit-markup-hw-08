@@ -1,37 +1,44 @@
 .task {
-    padding-top: 0;
+  padding-top: 0;
+  @media screen and (max-width: $desctop) {
+    display: none;
   }
-  
-  .task__title {
-    margin-bottom: 50px;
-  }
-  
-  .task__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .task__thumb {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .task__description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    background-color: $task-description-bg-color;
-  
-    color: $white-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
+}
+
+.task__list {
+  display: flex;
+}
+
+.task__title {
+  margin-bottom: 50px;
+}
+
+.task__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.task__thumb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.task__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: $task-description-bg-color;
+
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

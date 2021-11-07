@@ -1,40 +1,65 @@
 .features__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
     margin: -15px;
   }
-  
-  .features__item {
+  @media screen and (min-width: $desctop) {
+    flex-direction: row;
+    margin: -15px;
+  }
+}
+
+.features__item {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desctop) {
     width: 270px;
     margin: 15px;
   }
-  
-  .features__icon {
-    display: flex;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: $sect-team-bg-color;
-    align-items: center;
-    justify-content: center;
+}
+
+.features__icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $sect-team-bg-color;
+  align-items: center;
+  justify-content: center;
+}
+.features__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.features__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: left;
+
+  @media screen and (max-width: $tablet) {
+    text-align: center;
   }
-  .features__svg {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .features__title {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  
-    color: $title-text-color;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.14;
-    text-align: left;
-  }
-  
-  .features__text {
-    font-family: $roboto;
-    font-size: 14px;
-    line-height: 1.72;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
+}
+
+.features__text {
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  text-align: left;
+}

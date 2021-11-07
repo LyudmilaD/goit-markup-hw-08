@@ -1,37 +1,54 @@
 .logo {
-    margin-right: 90px;
-    display: block;
-    /*padding-top: 24px;
-    padding-bottom: 25px;*/
-  
-    color: $accent-color;
-    font-family: $raleway;
+  margin-right: 90px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $accent-color;
+  font-family: $raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  @media screen and (max-width: $mobile) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desctop) {
     font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.logo__header--textcolor {
+  color: $first-logo-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// footer logo settings
+
+.logo__footer {
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  text-align: center;
+  @media screen and (min-width: $desctop) {
     text-align: left;
   }
-  .logo__header--textcolor {
-    color: $first-logo-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
+}
+
+.logo__footer--textcolor {
+  color: $white-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
-  
-  // footer logo settings
-  
-  .logo__footer {
-    margin-bottom: 20px;
-  }
-  
-  .logo__footer--textcolor {
-    color: $white-text-color;
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
+}

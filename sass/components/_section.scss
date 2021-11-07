@@ -1,0 +1,7 @@
+.section {
+    @include paddings(60px);
+  
+    @media screen and (min-width: $desctop) {
+      @include paddings(94px);
+    }
+  }
