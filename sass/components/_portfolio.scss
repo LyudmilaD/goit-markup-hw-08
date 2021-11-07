@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin: -15px;
   }
 }
@@ -21,7 +21,7 @@
     margin: 15px;
     display: flex;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 3);
     margin: 15px;
   }
@@ -88,7 +88,7 @@
   @media (min-width: $tablet) {
     justify-content: center;
   }
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     margin-bottom: 50px;
   }
 }
@@ -102,7 +102,7 @@
   }
 }
 
-.munu__button {
+.menu__button {
   padding: 6px 22px;
   min-width: 73px;
 

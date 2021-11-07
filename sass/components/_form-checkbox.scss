@@ -12,7 +12,7 @@
 
   color: $primary-text-color;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -28,16 +28,12 @@
 
   color: $accent-color;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     margin-left: 5px;
     font-size: 14px;
     line-height: 1.71;
   }
 }
-
-// .checkbox__text {
-//   display: inline;
-// }
 
 .checkbox {
   position: absolute;

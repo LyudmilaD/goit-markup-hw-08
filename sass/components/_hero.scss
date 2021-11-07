@@ -5,7 +5,7 @@
   align-items: center;
   background-color: $second-bg-color;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     height: 600px;
   }
 }
@@ -25,7 +25,7 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.364;

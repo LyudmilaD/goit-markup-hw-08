@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     flex-direction: row;
     margin: -15px;
   }
@@ -23,7 +23,7 @@
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 270px;
     margin: 15px;
   }

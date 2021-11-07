@@ -1,7 +1,7 @@
 .section {
     @include paddings(60px);
   
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
       @include paddings(94px);
     }
   }
