@@ -1,6 +1,6 @@
 .contact__list {
   margin-left: auto;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
@@ -21,7 +21,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -29,7 +29,7 @@
 .contact__link--phone {
   padding-top: 0;
   padding-bottom: 10px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -38,7 +38,7 @@
 .contact__icon {
   margin-right: 8px;
   fill: currentColor;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 16px;
     height: 12px;
     margin-right: 8px;
@@ -48,7 +48,7 @@
 .contact__icon--mail {
   width: 14px;
   height: 10px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 16px;
     height: 12px;
   }
@@ -57,7 +57,7 @@
 .contact__icon--phone {
   width: 10px;
   height: 14px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 10px;
     height: 16px;
   }
@@ -67,7 +67,7 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-right: 50px;
     }
