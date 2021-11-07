@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  
+  .nav__link--current {
+    position: relative;
+  
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: $accent-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: left;
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+  
+      content: '';
+  
+      width: 100%;
+      height: 4px;
+      background: $accent-color;
+      border-radius: 2px;
+    }
+  }

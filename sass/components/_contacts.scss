@@ -1,0 +1,29 @@
+.contact__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  display: flex;
+
+  color: $primary-text-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact__list {
+  margin-left: auto;
+}
+
+.contact__item {
+  &:nth-child {
+    margin-right: 50px;
+  }
+}
