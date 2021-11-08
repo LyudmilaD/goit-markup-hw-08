@@ -13,8 +13,10 @@
   margin-bottom: 50px;
 }
 
-.task__item:not(:last-child) {
+.task__item {
+&:not(:last-child) {
   margin-right: 30px;
+  }
 }
 
 .task__thumb {
