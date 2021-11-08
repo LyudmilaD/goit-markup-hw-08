@@ -65,18 +65,17 @@
   fill: $first-logo-color;
 }
 
-.form__input:focus, 
+.form__input:focus,
 .form__input:hover {
-  color: $accent-color;
-  fill: currentColor;
-
-.form__icon:focus, 
-.form__icon:hover {
- 
   color: $accent-color;
   fill: currentColor;
 }
 
+.form__icon:focus,
+.form__icon:hover {
+  color: $accent-color;
+  fill: currentColor;
+}
 
 .form__textarea {
   resize: none;

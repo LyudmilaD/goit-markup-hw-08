@@ -1788,12 +1788,13 @@ img {
 .form__input:focus,
 .form__input:hover {
   color: #2196f3;
-  fill: #000000;
+  fill: currentColor;
 }
 
 .form__icon:focus,
 .form__icon:hover {
   color: #2196f3;
+  fill: currentColor;
 }
 
 .form__textarea {
