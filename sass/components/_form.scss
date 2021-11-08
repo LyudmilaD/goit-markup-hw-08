@@ -70,7 +70,9 @@
   color: $accent-color;
   fill: currentColor;
 }
-.form__icon {
+.form__icon:focus, 
+.form__icon:hover {
+ {
   color: $accent-color;
   fill: currentColor;
 }
