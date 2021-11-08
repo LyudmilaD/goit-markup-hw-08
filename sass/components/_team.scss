@@ -54,7 +54,7 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     flex-wrap: nowrap;
   }
 }
@@ -82,8 +82,7 @@
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
-  // @media (min-width: 1200px) {
-  // width: calc((100% - 60px) / 2);
+
 }
 .team__card {
   padding-top: 30px;
