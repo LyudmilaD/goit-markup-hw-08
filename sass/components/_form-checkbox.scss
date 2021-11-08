@@ -38,13 +38,14 @@
 .checkbox {
   position: absolute;
 
-  &:focus + .checkbox__item,
-  &:hover + .checkbox__item {
+  &:focus,
+  &:hover {
     fill: $accent-color;
   }
-}
+    
 
-.checkbox:checked + .checkbox__item {
+
+.checkbox:checked {
   border-radius: 2px;
 
   fill: $accent-color;
@@ -52,7 +53,18 @@
   background-color: $accent-color;
   background-image: url(../images/check.svg);
   background-size: contain;
-}
+  }
+
+.checkbox__item {
+  border-radius: 2px;
+
+  fill: $accent-color;
+
+  background-color: $accent-color;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  }
+
 
 .checkbox__item {
   margin-right: 7px;
