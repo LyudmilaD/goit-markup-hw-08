@@ -68,13 +68,13 @@
 .form__input:focus, 
 .form__input:hover {
   color: $accent-color;
-  fill: currentColor;
+  fill: $first-logo-color;
 }
 .form__icon:focus, 
 .form__icon:hover {
  {
   color: $accent-color;
-  fill: currentColor;
+  fill: $first-logo-color;
 }
 
 
