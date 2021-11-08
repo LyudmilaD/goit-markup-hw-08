@@ -17,9 +17,14 @@
   display: flex;
 }
 
-.nav__item:not(:last-child) {
+.nav__item {
+
+  &:not(:last-child) {
   margin-right: 50px;
+  }
 }
+
+
 
 .nav__link {
   display: block;

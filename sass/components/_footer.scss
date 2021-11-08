@@ -127,21 +127,19 @@
 
 
 
-
-
 .signup__title {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     justify-content: left;
   }
 }
 
 .signup__form {
   text-align: center;
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     display: flex;
   }
 }
@@ -150,7 +148,7 @@
   display: block;
   margin-bottom: 20px;
 
-  @media (min-width: $desctop) {
+  @media (min-width: $desktop) {
     width: 358px;
     margin-bottom: 0;
     margin-right: 12px;
